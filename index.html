@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kotyba KM official/Programming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="icon" href="logo profile.png">
+  </head>
+  <body>
+    <!--! Menu -->
+  <nav class="social-menu">
+    <h2 class="title has-text-white">My Social Media : </h2>
+    <div class="container nav-wrapping-container">
+      <div class="burger">
+        <a href="https://kotyba-km.github.io/Kotyba-KM-official/#home  "><i class="fa-solid fa-house   p-1 pr-2"></i>Home</a>
+        <a href="https://kotyba-km.github.io/Kotyba-KM-official/#skills"><i class="fa-solid fa-bolt    p-1 pr-2"></i>Skills</a>
+        <a href="https://kotyba-km.github.io/Kotyba-KM-official/#games "><i class="fa-solid fa-gamepad p-1 pr-2"></i>Games</a>
+      </div>
+      <br>
+      <a href="https://www.facebook.com/profile.php?id=100012670205776"><i class="fa-brands fa-facebook-f p-1 pr-2"></i> FaceBook/Kotyba KM</a>
+      <a href="https://www.instagram.com/kotyba_km/"><i class="fa-brands fa-instagram p-1 pr-2"></i>Instagram/Kotyba_km</a>
+      <a href="https://twitter.com/KotybaKm"><i class="fa-brands fa-x-twitter p-1 pr-2"></i>Twitter/Kotyba KM</a>
+      <a href="https://www.linkedin.com/in/kotyba-km-141271276/"><i class="fa-brands fa-linkedin-in p-1 pr-2"></i>LinkedIn/kotyba KM</a>
+      <a href="https://www.behance.net/kotybakmDesigns"><i class="fa-brands fa-behance p-1 pr-2"></i>Behance/Kotyba Km</a>
+    </div>
+    <button class="button close"><i class="fa-solid fa-right-from-bracket"></i></button>
+  </nav>
+  <!--! navbar  -->
+  <div class="section p-0"id="home" >
+    <nav class="navbar navy p-3">
+      <div class="navbar-brand brandy"><img src="logo profile.png" alt="" width="60px"><div class="shine btn"></div></div>
+      <div class="navbar-item item1 has-text-white"><a href="https://kotyba-km.github.io/Kotyba-KM-official/#home  " style="color: white;" href="#home">Home</a></div>
+      <div class="navbar-item item2 has-text-white"><a href="https://kotyba-km.github.io/Kotyba-KM-official/#skills" style="color: white;" href="#skills">Skills</a></div>
+      <div class="navbar-item item3 has-text-white"><a href="https://kotyba-km.github.io/Kotyba-KM-official/#games " style="color: white;" href="#games">Game</a></div>
+    </nav>
+  </div>
+  <!-- section one -->
+  <div class="start">
+    <p class="introduction">Welcome to my programming section of my web page</p>
+    <p class="introduction">This section shows all my web pages that i worked on</p>
+    <p class="introduction">You are welcome to visit this section every once in awhile to see new updates in my programming</p>
+<!-- click -->
+      <P class="click">
+      <span style="transform: rotate(-10deg) scaleX(-1); margin-right:10px ;"><i class="fa-solid fa-hand-point-down fa-bounce"></i></span>
+      <span class="letters">C</span>
+      <span class="letters">L</span>
+      <span class="letters">I</span>
+      <span class="letters">C</span>
+      <span class="letters">K</span>
+      <span style="transform: rotate(10deg); margin-left:10px ;"><i class="fa-solid fa-hand-point-down fa-bounce"></i></span>
+      </P>
+      <!-- end click -->
+      <button onclick="reveal();" class="start-btn"><i class="fa-solid fa-expand"></i></button>
+  </div>
+  <!-- end section -->
+  <section class="hero-section">
+   <div class="code-window">
+    <div class="code-title">
+        <button disabled class="title-btn">Code</button><p>Encryption programm using cypher method</p><p class="csharp mx-6 has-text-weight-bold has-text-primary">C#</p><p>Type:</p><button disabled class="title-btn">Console</button>
+    </div>
+    <div class="code">
+      <pre class="encrypt-code">
+        <span class="blue">namespace</span> <span class="white">MyProject<span class="white">;</span></span>
+        <span class="blue">class</span> <span class="green">Program</span>
+        <span class="white"><span class="white">{</span></span>
+            <span class="blue">static</span> <span class="blue">void</span> Main<span class="white">(</span><sapn class="blue">string</sapn><span class="white">[]</span> args<span class="white">)</span>
+            <span class="white"><span class="white">{</span></span>
+                <span class="blue">int</span> shift<span class="white"> = </span>3<span class="white">;</span>
+                <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"type: 1 for encryption or type: 2 for descryption"</span><span class="white">)</span><span class="white">;</span>
+                <span class="blue">int</span> opt<span class="white"> = </span><span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                <span class="pink">if</span> <span class="white">(</span>opt <span class="white"><span class="white">==</span></span> 1<span class="white">)</span>
+                <span class="white"><span class="white">{</span></span>
+                    <sapn class="blue">string</sapn> plainText<span class="white"> = </span>Convert.<span class="yellow">ToString</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="blue">string</span> cipherText<span class="white"> = </span>Encrypt<span class="white">(</span>plainText, shift<span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>cipherText<span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.ReadKey<span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                <span class="white">}</span>
+                <span class="pink">else</span> <span class="pink">if</span> <span class="white">(</span>opt <span class="white"><span class="white">==</span></span> 2<span class="white">)</span>
+                <span class="white"><span class="white">{</span></span>
+                    <span class="blue">string</span> cipherText<span class="white"> = </span>Convert.<span class="yellow">ToString</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="blue">string</span> descryptedText<span class="white"> = </span><spna class="yellow">Descrypt</spna><span class="white">(</span>cipherText, shift<span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>descryptedText<span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.ReadKey<span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                <span class="white">}</span>
+                <span class="pink">else</span> <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>opt <span class="white">+</span><span class="orange"> " is not an option"</span><span class="white">)</span><span class="white">;</span>
+                <span class="green">Console</span>.ReadKey<span class="white">(</span><span class="white">)</span><span class="white">;</span>
+            <span class="white">}</span>
+            <span class="blue">static</span> <span class="blue">string</span> Encrypt<span class="white">(</span><span class="blue">string</span> plainText, int shift<span class="white">)</span>
+            <span class="white"><span class="white">{</span></span>
+                <span class="blue">string</span> cipherText<span class="white"> = </span><span class="orange">""</span> <span class="white">;</span>
+                foreach <span class="white">(</span><span class="blue">char</span> c in plainText<span class="white">)</span> 
+                <span class="white"><span class="white">{</span></span>
+                    <span class="pink">if</span> <span class="white">(</span><span class="blue">char</span>.<span class="yellow">IsLetter</span><span class="white">(</span>c<span class="white">))</span>
+                    <span class="white"><span class="white">{</span></span>
+                        <span class="blue">char</span> lowerC<span class="white"> = </span><span class="blue">char</span>.ToLower<span class="white">(</span>c<span class="white">)</span><span class="white">;</span>
+                        <span class="blue">char</span> shifted<span class="white"> = </span><span class="white">(</span><span class="blue">char</span><span class="white">)</span><span class="white">(((</span>lowerC <span class="white">+</span> shift<span class="white"> - </span><span class="orange">'a'</span><span class="white">)</span> % 26<span class="white">)</span> <span class="white">+</span> 'a'<span class="white">)</span><span class="white">;</span>
+                        cipherText <span class="white"><span class="white">+</span>=</span> shifted<span class="white">;</span>
+                    <span class="white">}</span><span class="pink">else</span>
+                    <span class="white"><span class="white">{</span></span>
+                        cipherText <span class="white"><span class="white">+</span>=</span> c<span class="white">;</span>
+                    <span class="white">}</span>
+                <span class="white">}</span>
+                return cipherText<span class="white">;</span> 
+            <span class="white">}</span>
+            <span class="blue">static</span> <span class="blue">string</span> <span class="yellow">Descrypt</span><span class="white">(</span><span class="blue">string</span> cipherText, <span class="blue">int</span> shift<span class="white">)</span> 
+            <span class="white"><span class="white">{</span></span>
+                <span class="blue">string</span> plainText<span class="white"> = </span><span class="orange">""</span><span class="white">;</span>
+                <span class="pink">foreach</span> <span class="white">(</span><span class="blue">char</span> c <span class="pink">in</span> cipherText<span class="white">)</span>
+                <span class="white"><span class="white">{</span></span>
+                    <span class="pink">if</span> <span class="white">(</span><span class="blue">char</span>.<span class="yellow">IsLetter</span><span class="white">(</span>c<span class="white">))</span>
+                    <span class="white"><span class="white">{</span></span>
+                        <span class="blue">char</span> lowerC<span class="white"> = </span><span class="blue">char</span>.ToLower<span class="white">(</span>c<span class="white">)</span><span class="white">;</span>
+                        <span class="blue">char</span> shifted<span class="white"> = </span><span class="white">(</span><span class="blue">char</span><span class="white">)</span><span class="white">(((</span>lowerC<span class="white"> - </span>shift<span class="white"> - </span><span class="orange">'a'</span> <span class="white">+</span> 26<span class="white">)</span> % 26<span class="white">)</span> <span class="white">+</span> <span class="orange">'a'</span><span class="white">)</span><span class="white">;</span>
+                        plainText <span class="white"><span class="white">+</span>=</span> shifted<span class="white">;</span>
+                    <span class="white">}</span><span class="pink">else</span>
+                    <span class="white"><span class="white">{</span></span>
+                        plainText <span class="white"><span class="white">+</span>=</span> c<span class="white">;</span>
+                    <span class="white">}</span>
+                <span class="white">}</span>
+                return plainText<span class="white">;</span>
+            <span class="white">}</span>
+        <span class="white">}</span></pre>
+    </div>
+   </div>
+   <!-- second code -->
+   <div class="code-window">
+    <div class="code-title">
+        <button disabled class="title-btn">Code</button><p>Encryption programm using cypher method</p><p class="csharp mx-6 has-text-weight-bold has-text-primary">C#</p><p>Type:</p><button disabled class="title-btn mr-6">Console</button>
+      </div>
+      <div class="code panel1">
+      <button class="code-panel-button ml-6">Program.cs</button>
+      <pre class="encrypt-code">
+        <span class="blue">using</span> <span class="white">Programm</span><span class="white">;</span>
+        <span class="blue">using</span> <span class="blue">static</span> System.Net.Mime.MediaTypeNames<span class="white">;</span>
+        <span class="blue">namespace</span> <span class="white">MyProject;</span>
+        <span class="blue">class</span> <span class="white">Programm</span>
+        <span class="white">{</span>
+            <span class="blue">static</span> void Main<span class="white">(</span><span class="blue">string</span><sapn class="white">[]</sapn> args<span class="white">)</span>
+            <span class="white">{</span>
+                <span class="blue">double</span> sumOFmoney <span class="white">=</span>  0<span class="white">;</span>
+                <span class="blue">double</span> sumOfMalfunctionDamage <span class="white">=</span> 0<span class="white">;</span>
+                <span class="blue">double</span> DS <span class="white">=</span> 0 <span class="white">;</span>
+                <span class="blue">double</span> CS <span class="white">=</span> 0 <span class="white">;</span>
+              <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Welcome to our company travel system"</span><span class="white">)</span><span class="white">;</span>
+                <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the number of cash bill trips between 2023/11/1 and 2023/11/30"</span><span class="white">)</span><span class="white">;</span>
+                <span class="blue">int</span> cashTrips <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> i <span class="white">=</span> 0<span class="white">;</span> i < 10<span class="white">;</span> i<span class="white">++</span><span class="white">)</span>
+                <span class="white">{</span>
+                    <span class="pink">if</span> <span class="white">(</span>cashTrips > 30 <span class="white">||</span> cashTrips < 0<span class="white">)</span>
+                    <span class="white">{</span>
+                        <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"The number you enterd is not correct please try again"</span><span class="white">)</span><span class="white">;</span>
+                        cashTrips <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="white">}</span>
+                    else <span class="pink">if</span><span class="white">(</span>cashTrips <span class="white">==</span> 0<span class="white">)</span> <span class="white">{</span> break<span class="white">;</span> <span class="white">}</span><span class="white">;</span>
+                <span class="white">}</span><span class="white">;</span>
+                <span class="green">List</span><span class="green">
+                  <Cach_Bill>
+                </span> cash_Bills <span class="white">=</span> new <span class="green">List</span><span class="green">
+                  <Cach_Bill>
+                </span><span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> i <span class="white">=</span> 0<span class="white">;</span> i < cashTrips<span class="white">;</span> i<span class="white">++</span><span class="white">)</span>
+                <span class="white">{</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the bill number"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">int</span> BN <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the bill date .Only enter the</span><span class="white">(</span>day<span class="white">)</span>"<span class="white">)</span><span class="white">;</span>
+                    <span class="blue">int</span> BD <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> j <span class="white">=</span> 0<span class="white">;</span> i < 10<span class="white">;</span> i<span class="white">++</span><span class="white">)</span>
+                    <span class="white">{</span>
+                        <span class="pink">if</span> <span class="white">(</span>BD > 30 <span class="white">||</span> BD <<span class="white">=</span> 0<span class="white">)</span>
+                        <span class="white">{</span>
+                            <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Sorry not a valid date try again"</span><span class="white">)</span><span class="white">;</span>
+                            BD <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                        <span class="white">}</span>else <span class="white">{</span> break<span class="white">;</span> <span class="white">}</span><span class="white">;</span>
+                    <span class="white">}</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the car number"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">int</span> Cn <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the driver name"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">string</span> DN <span class="white">=</span> <span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>"Please enter the driver share between 1-0"<span class="white">)</span><span class="white">;</span>
+                    DS <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the company share between 1-0"</span><span class="white">)</span><span class="white">;</span>
+                    CS <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    /*cheking <span class="pink">for </span>valid shares <span class="pink">for </span>both the company and the driver*/
+                    check<span class="white">(</span>DS, CS<span class="white">)</span><span class="white">;</span>
+                    /*End of check*/
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the weight in </span><span class="white">(</span>KG<span class="white">)</span><span class="orange">"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">double</span> W <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the distance in </span><span class="white">(</span>KM<span class="white">)</span><span class="orange">"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">double</span> D <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the price of one KM"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">double</span> OKP <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"The Final cost of your trip is : "</span><span class="white">)</span><span class="white">;</span>
+                    cash_Bills.Add<span class="white">(</span>new <span class="green">Cach_Bill</span><span class="white">(</span>BN, BD, Cn, DN, DS, CS, W, D, OKP, <span class="green">Cach_Bill</span>.Full_Prices<span class="white">(</span>OKP, W, D, 0<span class="white">)))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="green">Cach_Bill</span>.Full_Prices<span class="white">(</span>OKP, W, D, 0<span class="white">))</span><span class="white">;</span>
+                    sumOFmoney <span class="white">=</span> sumOFmoney <span class="white">+</span> <span class="green">Cach_Bill</span>.Full_Prices<span class="white">(</span>OKP, W, D, 0<span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                <span class="white">}</span>
+                <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the number of forward bill trips between 2023/11/1 and 2023/11/30"</span><span class="white">)</span><span class="white">;</span>
+                <span class="blue">int</span> forwardTrips <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+        
+                <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> i <span class="white">=</span> 0<span class="white">;</span> i < 10<span class="white">;</span> i<span class="white">++</span><span class="white">)</span>
+                <span class="white">{</span>
+                    <span class="pink">if</span> <span class="white">(</span>forwardTrips > 30 <span class="white">||</span> forwardTrips < 0<span class="white">)</span>
+                    <span class="white">{</span>
+                        <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"The number you enterd is not correct please try again"</span><span class="white">)</span><span class="white">;</span>
+                        forwardTrips <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="white">}</span>
+                    else <span class="pink">if</span><span class="white">(</span>forwardTrips <span class="white">==</span> 0<span class="white">)</span> <span class="white">{</span> break<span class="white">;</span> <span class="white">}</span><span class="white">;</span>
+                <span class="white">}</span><span class="white">;</span>
+                <span class="green">List</span><Forward_Bill> forward_Bills <span class="white">=</span> new <span class="green">List</span><Forward_Bill><span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> i <span class="white">=</span> 0<span class="white">;</span> i < forwardTrips<span class="white">;</span> i<span class="white">++</span><span class="white">)</span>
+                <span class="white">{</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the bill number"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">int</span> BN <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the bill date .Only enter the</span><span class="white">(</span>day<span class="white">)</span><span class="orange">"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">int</span> BD <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                   
+                    <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> j <span class="white">=</span> 0<span class="white">;</span> i < 10<span class="white">;</span> i<span class="white">++</span><span class="white">)</span>
+                    <span class="white">{</span>
+                        <span class="pink">if</span> <span class="white">(</span>BD > 30 <span class="white">||</span> BD <<span class="white">=</span> 0<span class="white">)</span>
+                        <span class="white">{</span>
+                            <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Sorry not a valid date try again"</span><span class="white">)</span><span class="white">;</span>
+                            BD <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                        <span class="white">}</span>
+                        else <span class="white">{</span> break<span class="white">;</span> <span class="white">}</span><span class="white">;</span>
+                    <span class="white">}</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the car number"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">int</span> Cn <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the driver name"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">string</span> DN <span class="white">=</span> <span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the driver share between 1-0"</span><span class="white">)</span><span class="white">;</span>
+                    DS <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the company share between 1-0"</span><span class="white">)</span><span class="white">;</span>
+                    CS <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    /*cheking <span class="pink">for </span>valid shares <span class="pink">for </span>both the company and the driver*/
+                     check<span class="white">(</span>DS,CS<span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the weight in</span> <span class="white">(</span>KG<span class="white">)</span><span class="orange">"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">double</span> W <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the distance in </span><span class="white">(</span>KM<span class="white">)</span><span class="orange">"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">double</span> D <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the price of one KM"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">double</span> OKP <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the customer name"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">string</span> CN <span class="white">=</span> <span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"The cost of your trip before discount is : "</span><span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="green">Cach_Bill</span>.Full_Prices<span class="white">(</span>OKP, W, D, 0<span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the amount of discount .between 1-0"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">double</span> discount <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> j <span class="white">=</span> 0<span class="white">;</span> j < 10<span class="white">;</span> j<span class="white">++</span><span class="white">)</span>
+                    <span class="white">{</span>
+                        <span class="pink">if</span> <span class="white">(</span>discount > 1 <span class="white">||</span> discount <<span class="white">=</span> 0<span class="white">)</span>
+                        <span class="white">{</span>
+                            <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>"Sorry not a valid discount value try again"<span class="white">)</span><span class="white">;</span>
+                            discount <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                        <span class="white">}</span>
+                        else <span class="white">{</span> break<span class="white">;</span> <span class="white">}</span><span class="white">;</span>
+                    <span class="white">}</span>
+                    <span class="pink">if</span> <span class="white">(</span>forwardTrips <span class="white">==</span> 2<span class="white">)</span>
+                    <span class="white">{</span>
+                        discount <span class="white">=</span> discount <span class="white">+</span> 0.1<span class="white">;</span>
+                    <span class="white">}</span>else <span class="pink">if</span><span class="white">(</span>forwardTrips <span class="white">==</span> 3 <span class="white">)</span>
+                    <span class="white">{</span>
+                        discount <span class="white">=</span> discount <span class="white">+</span> 0.15<span class="white">;</span>
+                    <span class="white">}</span>else <span class="pink">if</span><span class="white">(</span>forwardTrips > 3<span class="white">)</span>
+                    <span class="white">{</span>
+                        discount <span class="white">=</span> discount <span class="white">+</span> 0.2<span class="white">;</span>
+                    <span class="white">}</span>
+                    forward_Bills.Add<span class="white">(</span>new Forward_Bill<span class="white">(</span>BN, BD, Cn, DN, DS, CS, W, D, OKP, <span class="green">Cach_Bill</span>.Full_Prices<span class="white">(</span>OKP, W, D, 0<span class="white">)</span>, CN, 0,
+                        Forward_Bill.DiscountFunction<span class="white">(</span>forwardTrips, <span class="green">Cach_Bill</span>.Full_Prices<span class="white">(</span>OKP, W, D, 0<span class="white">)</span>,discount<span class="white">)))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"The Final cost of your trip is : "</span><span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>Forward_Bill.DiscountFunction<span class="white">(</span>forwardTrips,<span class="green">Cach_Bill</span>.Full_Prices<span class="white">(</span>OKP,W,D,0<span class="white">)</span>, discount<span class="white">))</span><span class="white">;</span>
+                    sumOFmoney <span class="white">=</span> sumOFmoney <span class="white">+</span> Forward_Bill.DiscountFunction<span class="white">(</span>forwardTrips, <span class="green">Cach_Bill</span>.Full_Prices<span class="white">(</span>OKP, W, D, 0<span class="white">)</span>, discount<span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="white">)</span><span class="white">;</span>
+        
+                <span class="white">}</span>
+                <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please Enter the number of extra payments receipts between 2023/11/1 and 2023/11/30"</span><span class="white">)</span><span class="white">;</span>
+                <span class="blue">int</span> receipts <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> i <span class="white">=</span> 0<span class="white">;</span> i < 10<span class="white">;</span> i<span class="white">++</span><span class="white">)</span>
+                <span class="white">{</span>
+                    <span class="pink">if</span> <span class="white">(</span>receipts > 30 <span class="white">||</span> receipts < 0<span class="white">)</span>
+                    <span class="white">{</span>
+                        <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"The number you enterd is not correct please try again"</span><span class="white">)</span><span class="white">;</span>
+                        receipts <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="white">}</span>
+                    else <span class="pink">if</span><span class="white">(</span>receipts <span class="white">==</span> 0<span class="white">)</span> <span class="white">{</span> break<span class="white">;</span> <span class="white">}</span><span class="white">;</span>
+                <span class="white">}</span><span class="white">;</span>
+                <span class="green">List</span><Payment> <span class="green">list</span> <span class="white">=</span> new <span class="green">List</span><Payment><span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> i <span class="white">=</span> 0<span class="white">;</span> i < receipts<span class="white">;</span> i<span class="white">++</span><span class="white">)</span>
+                <span class="white">{</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the receipt number"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">int</span> RN <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the receipt date"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">int</span> RD <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> j <span class="white">=</span> 0<span class="white">;</span> i < 10<span class="white">;</span> i<span class="white">++</span><span class="white">)</span>
+                    <span class="white">{</span>
+                        <span class="pink">if</span> <span class="white">(</span>RD > 30 <span class="white">||</span> RD <<span class="white">=</span> 0<span class="white">)</span>
+                        <span class="white">{</span>
+                            <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Sorry not a valid date try again"</span><span class="white">)</span><span class="white">;</span>
+                            RD <span class="white">=</span> <span class="blue">int</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                        <span class="white">}</span>
+                        else <span class="white">{</span> break<span class="white">;</span> <span class="white">}</span><span class="white">;</span>
+                    <span class="white">}</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the receipt value"</span><span class="white">)</span><span class="white">;</span>
+                    <span class="blue">double</span> RV <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    sumOfMalfunctionDamage <span class="white">=</span> sumOfMalfunctionDamage <span class="white">+</span> RV<span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>"Please enter the receipt cause"<span class="white">)</span><span class="white">;</span>
+                    <span class="blue">string</span> RC <span class="white">=</span> <span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                    <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                <span class="white">}</span>
+                <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"The total of company share is : "</span><span class="white">)</span><span class="white">;</span>
+                <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>sumOFmoney * <span class="white">(</span>1 - DS<span class="white">))</span><span class="white">;</span>
+                <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>"The total of drivers share is : "<span class="white">)</span><span class="white">;</span>
+                <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>sumOFmoney * <span class="white">(</span>1 - CS<span class="white">))</span><span class="white">;</span>
+                <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="white">)</span><span class="white">;</span>
+                <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>"The company profit is :"<span class="white">)</span><span class="white">;</span>
+                <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">((</span>sumOFmoney * <span class="white">(</span>1 - DS<span class="white">)</span> - sumOfMalfunctionDamage<span class="white">))</span><span class="white">;</span>
+                <span class="green">Console</span>.ReadKey<span class="white">(</span><span class="white">)</span><span class="white">;</span>
+        
+        
+            <span class="white">}</span>
+            public <span class="blue">static</span> <span class="white">(</span><span class="blue">double</span>,<span class="blue">double</span><span class="white">)</span> check<span class="white">(</span><span class="blue">double</span> DS,<span class="blue">double</span> CS<span class="white">)</span>
+            <span class="white">{</span>
+                <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> k <span class="white">=</span> 0<span class="white">;</span> k < 10<span class="white">;</span> k<span class="white">++</span><span class="white">)</span>
+                <span class="white">{</span>
+                    <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> j <span class="white">=</span> 0<span class="white">;</span> j < 10<span class="white">;</span> j<span class="white">++</span><span class="white">)</span>
+                    <span class="white">{</span>
+                        <span class="pink">if</span> <span class="white">(</span>DS > 1 <span class="white">||</span> DS <<span class="white">=</span> 0<span class="white">)</span>
+                        <span class="white">{</span>
+                            <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>"Sorry not a valid driver share try again"<span class="white">)</span><span class="white">;</span>
+                            DS <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                        <span class="white">}</span>
+                        else <span class="white">{</span> break<span class="white">;</span> <span class="white">}</span><span class="white">;</span>
+                    <span class="white">}</span>
+                    <span class="pink">for </span><span class="white">(</span><span class="blue">int</span> a <span class="white">=</span> 0<span class="white">;</span> a < 10<span class="white">;</span> a<span class="white">++</span><span class="white">)</span>
+                    <span class="white">{</span>
+                        <span class="pink">if</span> <span class="white">(</span>CS > 1 <span class="white">||</span> CS <<span class="white">=</span> 0<span class="white">)</span>
+                        <span class="white">{</span>
+                            <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span>"Sorry not a valid  company share try again"<span class="white">)</span><span class="white">;</span>
+                            CS <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                        <span class="white">}</span>
+                        else <span class="white">{</span> break<span class="white">;</span> <span class="white">}</span><span class="white">;</span>
+                    <span class="white">}</span>
+        
+                    <span class="pink">if</span> <span class="white">(</span>DS <span class="white">+</span> CS <span class="white">==</span> 1<span class="white">)</span>
+                    <span class="white">{</span>
+                        break<span class="white">;</span>
+                    <span class="white">}</span>
+                    else 
+                    <span class="white">{</span> 
+                        <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Your inserted Shares does not add up to 1 ,You need to try again"</span><span class="white">)</span><span class="white">;</span>
+                        <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the driver share between 1-0"</span><span class="white">)</span><span class="white">;</span>
+                        DS <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                        <span class="green">Console</span>.<span class="yellow">WriteLine</span><span class="white">(</span><span class="orange">"Please enter the company share between 1-0"</span><span class="white">)</span><span class="white">;</span>
+                        CS <span class="white">=</span> <span class="blue">double</span>.<span class="yellow">Parse</span><span class="white">(</span><span class="green">Console</span>.<span class="yellow">ReadLine</span><span class="white">(</span><span class="white">))</span><span class="white">;</span>
+                    <span class="white">}</span>
+        
+                <span class="white">}</span>
+                        return <span class="white">(</span>DS , CS<span class="white">)</span> <span class="white">;</span>
+                        
+            <span class="white">}</span>
+        <span class="white">}</span>
+        </pre>
+        <button class="code-panel-button Pbtn2 ">Bill.cs</button>
+        <pre class="encrypt-code">
+          <span class="blue">using</span> System<span class="white">;</span>
+  <span class="blue">using</span> System.Collections.Generic<span class="white">;</span>
+  <span class="blue">using</span> System.Linq<span class="white">;</span>
+  <span class="blue">using</span> System.Text<span class="white">;</span>
+  <span class="blue">using</span> System.Threading.Tasks<span class="white">;</span>
+  
+  <span class="blue">namespace</span> Programm
+  <span class="white">{</span>
+      internal class Bill
+      <span class="white">{</span>
+  
+          <span class="blue">public</span> <span class="blue">int</span> billNumber<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">int</span> billDate<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">int</span> carNumber<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">string</span> driverName<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> driverShare<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> companyShare<span class="white">;</span>
+      <span class="white">}</span>
+      <span class="blue">public</span> <span class="blue">class</span> <span class="green">Cach_Bill</span>
+      <span class="white">{</span>
+          <span class="blue">public</span> <span class="blue">int</span> billNumber<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">int</span> billDate<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">int</span> carNumber<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">string</span> driverName<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> driverShare<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> companyShare<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> weight<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> distance<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> oneKmPrice<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> fullPrice<span class="white">;</span>
+          <span class="blue">public</span> <span class="green">Cach_Bill</span>(<span class="blue">int</span> billNumber, <span class="blue">int</span> billDate, <span class="blue">int</span> carNumber, <span class="blue">string</span> driverName, <span class="blue">double</span> driverShare, <span class="blue">double</span> companyShare, <span class="blue">double</span> weight, <span class="blue">double</span> distance, <span class="blue">double</span> oneKmPrice, <span class="blue">double</span> fullPrice)
+          <span class="white">{</span>
+              <span class="blue">this</span>.billNumber<span class="whits"> = </span>billNumber<span class="white">;</span>
+              <span class="blue">this</span>.billDate<span class="whits"> = </span>billDate<span class="white">;</span>
+              <span class="blue">this</span>.carNumber<span class="whits"> = </span>carNumber<span class="white">;</span>
+              <span class="blue">this</span>.driverName<span class="whits"> = </span>driverName<span class="white">;</span>
+              <span class="blue">this</span>.driverShare<span class="whits"> = </span>driverShare<span class="white">;</span>
+              <span class="blue">this</span>.companyShare<span class="whits"> = </span>companyShare<span class="white">;</span>
+              <span class="blue">this</span>.weight<span class="whits"> = </span>weight<span class="white">;</span>
+              <span class="blue">this</span>.distance<span class="whits"> = </span>distance<span class="white">;</span>
+              <span class="blue">this</span>.oneKmPrice<span class="whits"> = </span>oneKmPrice<span class="white">;</span>
+              <span class="blue">this</span>.fullPrice<span class="whits"> = </span>fullPrice<span class="white">;</span>
+          <span class="white">}</span>
+          <span class="blue">public</span> static <span class="blue">double</span> <span class="yellow">Full_Prices</span>(<span class="blue">double</span> oneKmPrice, <span class="blue">double</span> weight, <span class="blue">double</span> distance, <span class="blue">double</span> fullPrice)
+          <span class="white">{</span>
+              <span class="pink">if</span> (distance < 25)
+              <span class="white">{</span>
+                  fullPrice<span class="whits"> = </span>oneKmPrice * 25 <span class="white">;</span>
+              <span class="white">}</span>
+              <span class="pink">if</span> (distance > 25 && distance <= 60)
+              <span class="white">{</span>
+                  fullPrice<span class="whits"> = </span>fullPrice + (10000 * (distance - 25))<span class="white">;</span>
+                  <span class="pink">if</span> (weight > 1000)
+                  <span class="white">{</span>
+                      fullPrice<span class="whits"> = </span>fullPrice + (1000 * (weight - 1000))<span class="white">;</span>
+                  <span class="white">}</span>
+              <span class="white">}</span>
+              <span class="pink">else</span> <span class="pink">if</span> (distance > 60)
+              <span class="white">{</span>
+                  fullPrice<span class="whits"> = </span>fullPrice + (12000 * (distance - 60))<span class="white">;</span>
+                  <span class="pink">if</span> (weight > 1200)
+                  <span class="white">{</span>
+                      fullPrice<span class="whits"> = </span>fullPrice + (1500 * (weight - 1200))<span class="white">;</span>
+                  <span class="white">}</span>
+              <span class="white">}</span>
+              return fullPrice<span class="white">;</span>
+          <span class="white">}</span>
+      <span class="white">}</span>
+      <span class="blue">public</span> <sapn class="blue">class</sapn> <span class="green">Forward_Bill</span>
+      <span class="white">{</span>
+          <span class="blue">public</span> <span class="blue">int</span> billNumber<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">int</span> billDate<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">int</span> carNumber<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">string</span> driverName<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> driverShare<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> companyShare<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> weight<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> distance<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> oneKmPrice<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> fullPrice<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">string</span> costumerName<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> discount<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> fullDiscount<span class="white">;</span>
+          <span class="blue">public</span> Forward_Bill(<span class="blue">int</span> billNumber, <span class="blue">int</span> billDate, <span class="blue">int</span> carNumber, <span class="blue">string</span> driverName, <span class="blue">double</span> driverShare, <span class="blue">double</span> companyShare, <span class="blue">double</span> weight, <span class="blue">double</span> distance, <span class="blue">double</span> oneKmPrice,<span class="blue">double</span> fullPrice, <span class="blue">string</span> costumerName, <span class="blue">double</span> discount, <span class="blue">double</span> fullDiscount)
+          <span class="white">{</span>
+              billNumber<span class="whits"> = </span>billNumber<span class="white">;</span>
+              billDate<span class="whits"> = </span>billDate<span class="white">;</span>
+              carNumber<span class="whits"> = </span>carNumber<span class="white">;</span>
+              driverName<span class="whits"> = </span>driverName<span class="white">;</span>
+              driverShare<span class="whits"> = </span>driverShare<span class="white">;</span>
+              companyShare<span class="whits"> = </span>companyShare<span class="white">;</span>
+              weight<span class="whits"> = </span>weight<span class="white">;</span>
+              distance<span class="whits"> = </span>distance<span class="white">;</span>
+              oneKmPrice<span class="whits"> = </span>oneKmPrice<span class="white">;</span>
+              fullPrice<span class="whits"> = </span>fullPrice<span class="white">;</span>
+              costumerName<span class="whits"> = </span>costumerName<span class="white">;</span>
+              discount<span class="whits"> = </span>discount<span class="white">;</span>
+              fullDiscount<span class="whits"> = </span>fullDiscount<span class="white">;</span>
+          <span class="white">}</span>
+          <span class="blue">public</span> static <span class="blue">double</span> <sapn class="yellow">DiscountFunction</sapn>(<span class="blue">double</span> numberOfTrips, <span class="blue">double</span> fullPrice,<span class="blue">double</span> discount)
+          <span class="white">{</span>
+              <span class="pink">if</span> (numberOfTrips == 2)
+              <span class="white">{</span>
+                  fullPrice<span class="whits"> = </span>fullPrice * (1 - discount)<span class="white">;</span>
+  
+              <span class="white">}</span>
+              <span class="pink">else</span> <span class="pink">if</span> (numberOfTrips == 3)
+              <span class="white">{</span>
+                  fullPrice<span class="whits"> = </span>fullPrice * (1 - discount)<span class="white">;</span>
+  
+              <span class="white">}</span>
+              <span class="pink">else</span> <span class="pink">if</span> (numberOfTrips > 3)
+              <span class="white">{</span>
+                  fullPrice<span class="whits"> = </span>fullPrice * (1 - discount)<span class="white">;</span>
+              <span class="white">}</span>
+              return fullPrice<span class="white">;</span>
+          <span class="white">}</span>
+  
+  
+      <span class="white">}</span>
+      <span class="blue">public</span><span class="blue"> class</span> <span class="green">Payment</span>
+      <span class="white">{</span>
+          <span class="blue">public</span> <span class="blue">int</span> receiptNumber<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">int</span> receiptDate<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">double</span> receiptValue<span class="white">;</span>
+          <span class="blue">public</span> <span class="blue">string</span> receiptCause<span class="white">;</span>
+      <span class="white">}</span>
+  <span class="white">}</span>
+  
+        </pre>
+    </div>
+   </div>
+</section>
+<script src="script.js" defer></script>
+  </body>
+</html>
