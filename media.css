@@ -51,6 +51,9 @@
     width: 200%;
     font-size: small;
    }
+   .nav-wrapping-container {
+    height: 90%;
+    }
 }
 @media (max-width:600px)
 {
@@ -68,7 +71,7 @@
         display: none !important;
     }
 }
-@media (max-width:450px) {
+@media (max-width:450px),(max-height:750px) {
     .social-menu{
         width: 95vw;
     } 
@@ -90,7 +93,16 @@
     pre {
         position: absolute;
         left: 0;
-        
+    }
+    .nav-wrapping-container {
+        height: 95%;
+    }
+    .social-menu h2{
+        font-size: large;
+        margin-bottom: 10px !important;
+    }
+    .social-menu a{
+       padding: 8px;
     }
 }
 @media (max-width:300px) {
@@ -106,4 +118,13 @@
     .click {
         font-size: 40px;
     }
+    .social-menu a{
+        font-size: small;
+        padding: 5px;
+        margin: 1px;
+     }
+     .social-menu {
+        min-height: 100dvh;
+        min-width: 100dvw;
+     }
 }
